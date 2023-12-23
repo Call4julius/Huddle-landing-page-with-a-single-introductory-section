@@ -196,7 +196,7 @@ header .logo {
   gap: var(--spacer-1);
 }
 
-.social--icon a i {
+.social--icon a {
   cursor: pointer;
   text-decoration: none;
   width: 40px;
@@ -207,10 +207,14 @@ header .logo {
   place-content: center;
 }
 
-.social--icon a i:hover,
-.social--icon a i:focus {
+.social--icon a:hover,
+.social--icon a:focus {
+  border: 1px solid hsl(var(--clr-accent-400));
+}
+
+.social--icon a:hover [class*="fa-"],
+.social--icon a:focus [class*="fa-"] {
   color: hsl(var(--clr-accent-400));
-  border: 1px solid currentcolor;
 }
 
 @media (min-width: 53.125em) {
